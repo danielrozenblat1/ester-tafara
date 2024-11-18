@@ -1,0 +1,175 @@
+.faqItem {
+  margin-bottom: 1rem;
+  border: 1px solid #f5e1e7;  /* ורוד עדין אך יותר נוכח */
+  border-radius: 12px;
+  overflow: hidden;
+  width: 500px;
+  margin: 15px auto;
+  direction: rtl;
+  box-shadow: 0 4px 20px rgba(219, 201, 206, 0.18),
+              inset 0 8px 30px rgba(200, 200, 200, 0.25),
+              inset 0 -8px 30px rgba(150, 150, 150, 0.2);
+  text-decoration: none;
+  background: linear-gradient(145deg, #fff2f5, #ffe8ed);  /* ורוד יותר נוכח */
+  position: relative;
+}
+
+.questionButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem;
+  background: linear-gradient(to right, rgba(255, 242, 247, 0.95), rgba(255, 234, 241, 0.95));  /* ורוד יותר נוכח */
+  border: none;
+  text-decoration: none;
+  color: #4a4145;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 4px 4px 15px rgba(180, 180, 180, 0.25),
+              inset -4px -4px 15px rgba(150, 150, 150, 0.2);
+}
+
+.questionButton:hover {
+  background: linear-gradient(to right, rgba(255, 234, 241, 0.95), rgba(255, 228, 236, 0.95));  /* ורוד יותר כהה בהובר */
+  box-shadow: inset 4px 4px 20px rgba(180, 180, 180, 0.3),
+              inset -4px -4px 20px rgba(150, 150, 150, 0.25);
+}
+
+.answerContainer {
+  overflow: hidden;
+  transition: height 0.3s ease;
+  background: linear-gradient(135deg, #fff0f4, #fff6f9);  /* ורוד יותר נוכח */
+  margin: auto;
+  direction: rtl;
+  box-shadow: inset 0 6px 20px rgba(180, 180, 180, 0.25),
+              inset 0 -6px 20px rgba(150, 150, 150, 0.2),
+              inset 6px 0 20px rgba(180, 180, 180, 0.25),
+              inset -6px 0 20px rgba(150, 150, 150, 0.2);
+}
+
+.answerText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.05rem;
+  padding: 1.5rem;
+  color: #635a5d;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  line-height: 1.6;
+  background: linear-gradient(135deg, rgba(255, 234, 241, 0.6), rgba(255, 246, 249, 0.6));  /* ורוד יותר נוכח */
+}
+
+.questionText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #4a4145;  
+  direction: rtl;
+  flex-grow: 1;
+  text-shadow: 0 1px 2px rgba(180, 180, 180, 0.3);
+}
+
+.iconWrapper {
+  width: 24px;
+  flex-shrink: 0;
+  color: #d1a0ab;  /* ורוד יותר נוכח */
+  text-decoration: none;
+  filter: drop-shadow(0 2px 3px rgba(180, 180, 180, 0.3));
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  opacity: 0.85;  /* מוסיף מעט ברק */
+}
+
+/* הוספת אפקט ברק עדין */
+.faqItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, 
+    transparent, 
+    rgba(255, 255, 255, 0.5), 
+    transparent
+  );
+}
+
+/* שאר הקוד נשאר זהה */
+/* הסגנונות הרספונסיביים נשארים זהים */
+@media (max-width: 350px) {
+  .faqItem {
+    width: 280px;
+  }
+  .questionText {
+    font-size: 1rem;
+  }
+  .answerText {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .faqItem {
+    width: 320px;
+  }
+  .questionText {
+    font-size: 1.05rem;
+  }
+  .answerText {
+    font-size: 0.95rem; 
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .faqItem {
+    width: 400px;
+  }
+  .questionText {
+    font-size: 1.1rem;
+  }
+  .answerText {
+    font-size: 1rem; 
+  }
+}
+/* Responsive styles remain unchanged */
+@media (max-width: 350px) {
+  .faqItem {
+    width: 280px;
+  }
+  .questionText {
+    font-size: 1rem;
+  }
+  .answerText {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .faqItem {
+    width: 320px;
+  }
+  .questionText {
+    font-size: 1.05rem;
+  }
+  .answerText {
+    font-size: 0.95rem; 
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .faqItem {
+    width: 400px;
+  }
+  .questionText {
+    font-size: 1.1rem;
+  }
+  .answerText {
+    font-size: 1rem; 
+  }
+}

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+.descriptionWrapper, .descriptionWrapperP {
+  width: 80%;
+  max-width: 600px;
+  margin: 3rem auto 0;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 228, 225, 0.9),
+    rgba(255, 240, 245, 0.95));
+  border-radius: 16px 24px 16px 24px;
+  box-shadow: 0 4px 20px rgba(255, 192, 203, 0.15),
+              0 8px 32px rgba(134, 134, 134, 0.1);
+  border: 1px solid rgba(255, 192, 203, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptionWrapper:hover, .descriptionWrapperP:hover {
+  box-shadow: 0 8px 32px rgba(255, 192, 203, 0.2),
+              0 16px 48px rgba(134, 134, 134, 0.15);
+  transform: translateY(-2px);
+  border-color: rgba(255, 192, 203, 0.2);
+}
+
+.wrapP {
+  padding-top: 80px;
+}
+
+.description {
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: "AssistantR", Arial, sans-serif;
+  text-align: center;
+  direction: rtl;
+  color: #333;
+  line-height: 1.6;
+  transition: transform 0.3s ease;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  margin: 2rem 0;
+  color: #2c2c2c;
+  font-weight: 300;
+
+  text-shadow: 1px 1px 1px rgba(255, 192, 203, 0.1);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 3rem auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+.descriptionWrapper, .descriptionWrapperP {
+  width: 80%;
+  max-width: 600px;
+  margin: 3rem auto 0;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 228, 225, 0.9),
+    rgba(255, 240, 245, 0.95));
+  border-radius: 16px 24px 16px 24px;
+  box-shadow: 0 4px 20px rgba(255, 192, 203, 0.15),
+              0 8px 32px rgba(134, 134, 134, 0.1);
+  border: 1px solid rgba(255, 192, 203, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rest of the base styles remain the same */
+
+@media only screen and (max-width: 350px) {
+  .descriptionWrapper, .descriptionWrapperP {
+    width: 80%;
+    margin: 2rem auto 0;
+    padding: 1rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .row {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 351px) {
+  .descriptionWrapper, .descriptionWrapperP {
+    width: 80%;
+    margin: 2rem auto 0;
+    padding: 1rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .row {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 451px) {
+  .descriptionWrapper, .descriptionWrapperP {
+    width: 80%;
+    margin: 2rem auto 0;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-size: 2.4rem;
+  }
+  
+  .row {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 551px) {
+  .descriptionWrapper, .descriptionWrapperP {
+    width: 80%;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .row {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 651px) {
+  .descriptionWrapper, .descriptionWrapperP {
+    width: 80%;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-size: 2.7rem;
+  }
+  
+  .row {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 751px) {
+  .descriptionWrapper, .descriptionWrapperP {
+    width: 80%;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .row {
+    width: 90%;
+  }
+}
+
+/* Continue with the same pattern for larger breakpoints */
+@media only screen and (min-width: 851px),
+       (min-width: 951px),
+       (min-width: 1051px),
+       (min-width: 1151px) {
+  .descriptionWrapper, .descriptionWrapperP {
+    width: 80%;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+  }
+  
+  .row {
+    width: 90%;
+  }
+}

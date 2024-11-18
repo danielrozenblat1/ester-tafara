@@ -1,0 +1,143 @@
+.NewBox {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  /* עדכון הצל לעדין יותר עם גוון ורדרד */
+  box-shadow: 0 4px 20px rgba(255, 192, 203, 0.15),
+              0 8px 32px rgba(134, 134, 134, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px;
+  
+  /* שינוי הרקע לגרדיאנט עדין יותר */
+  background: linear-gradient(135deg, 
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 228, 225, 0.9),
+      rgba(255, 240, 245, 0.95));
+  /* עיצוב הפינות בצורה יותר מעניינת */
+  border-radius: 16px 24px 16px 24px;
+  position: relative;
+  /* הוספת מסגרת עדינה */
+  border: 1px solid rgba(255, 192, 203, 0.1);
+  /* הוספת אפקט זכוכית */
+  backdrop-filter: blur(5px);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.1rem;
+  font-family: "AssistantR", Arial, sans-serif;
+  text-align: right;
+  margin: 3% 0;
+  direction: rtl;
+  width: 90%;
+  color: #333;
+  line-height: 1.6;
+  /* הוספת אנימציה עדינה */
+  transition: transform 0.3s ease;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-family: "Assistant", Arial, sans-serif;
+  text-align: right;
+  padding-right: 15px;
+  direction: rtl;
+  width: 100%;
+  font-weight: 800;
+  color: #2c2c2c;
+  /* הוספת הצללת טקסט עדינה */
+  text-shadow: 1px 1px 1px rgba(255, 192, 203, 0.1);
+}
+
+.icon {
+  display: flex;
+  width: 30%;
+  margin-left: auto;
+  /* הוספת אנימציה עדינה */
+  transition: transform 0.3s ease;
+}
+
+.NewBox:hover {
+  /* שדרוג אפקט ההאבר */
+  box-shadow: 0 8px 32px rgba(255, 192, 203, 0.2),
+              0 16px 48px rgba(134, 134, 134, 0.15);
+  transform: translateY(-2px);
+  border-color: rgba(255, 192, 203, 0.2);
+}
+
+.NewBox:hover .icon {
+  transform: scale(1.05);
+}
+
+.NewBox:hover .description {
+  transform: translateX(-5px);
+}
+
+@media only screen and (max-width: 350px) {
+  .NewBox {
+      width: 270px;
+      max-width: 320px;
+      padding: 15px;
+  }
+  
+  .description {
+      font-size: 0.9rem;
+      width: 100%;
+  }
+  
+  .title {
+      font-size: 1.3rem;
+  }
+  
+  .icon {
+      width: 25%;
+  }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 450px) {
+  .NewBox {
+      width: 290px;
+      padding: 18px;
+  }
+  
+  .description {
+      font-size: 1rem;
+      width: 95%;
+  }
+  
+  .title {
+      font-size: 1.4rem;
+  }
+  
+  .icon {
+      width: 28%;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 550px) {
+  .NewBox {
+      width: 360px;
+  }
+  
+  .description {
+      font-size: 1.05rem;
+      width: 90%;
+  }
+  
+  .title {
+      font-size: 1.5rem;
+  }
+  
+  .icon {
+      width: 30%;
+  }
+}

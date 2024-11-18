@@ -1,0 +1,186 @@
+/* Default styles (for screens above 1250px) */
+.title {
+  font-size: 3rem;
+  font-family: "Assistant";
+  text-align: center;
+  margin: 2% auto;
+  direction: rtl;
+  color: #281916;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-family: "AssistantR";
+  text-align: center;
+  margin: 2% auto;
+  direction: rtl;
+  color: #281916;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  font-size: 1.4rem;
+  font-family: "AssistantR";
+  text-align: center;
+  margin: 2% auto;
+  direction: rtl;
+  color: #281916;
+}
+
+.center {
+  display: flex;
+  margin: 2% auto;
+  direction: rtl;
+  width: 70%;
+  justify-content: center;
+}
+
+.center img {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1% auto;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 1150px - 1250px */
+@media screen and (max-width: 1250px) {
+  .title { font-size: 2.9rem; }
+  .subtitle { font-size: 1.7rem; }
+  .description { font-size: 1.35rem; }
+  .center { width: 75%; }
+}
+
+/* 1050px - 1150px */
+@media screen and (max-width: 1150px) {
+  .title { font-size: 2.8rem; }
+  .subtitle { font-size: 1.6rem; }
+  .description { font-size: 1.3rem; }
+  .center { width: 80%; }
+}
+
+/* 950px - 1050px */
+@media screen and (max-width: 1050px) {
+  .title { font-size: 2.7rem; }
+  .subtitle { font-size: 1.55rem; }
+  .description { font-size: 1.25rem; }
+  .center { width: 85%; }
+}
+
+/* 850px - 950px */
+@media screen and (max-width: 950px) {
+  .title { font-size: 2.6rem; }
+  .subtitle { font-size: 1.5rem; }
+  .description { font-size: 1.2rem; }
+  .center { width: 90%; }
+}
+
+/* 750px - 850px */
+@media screen and (max-width: 850px) {
+  .title { font-size: 2.5rem; }
+  .subtitle { font-size: 1.45rem; }
+  .description { font-size: 1.15rem; }
+  .center { width: 95%; }
+}
+
+/* 650px - 750px */
+@media screen and (max-width: 750px) {
+  .title { font-size: 2.4rem; }
+  .subtitle { font-size: 1.4rem; }
+  .description { font-size: 1.1rem; }
+  .center { width: 60%; }
+}
+
+/* 550px - 650px */
+@media screen and (max-width: 650px) {
+  .title { font-size: 2.3rem; }
+  .subtitle { font-size: 1.35rem; }
+  .description { font-size: 1.05rem; }
+  .center { width: 70%; }
+}
+
+/* Below 550px - increased font sizes and spacing */
+@media screen and (max-width: 550px) {
+  .title { 
+      font-size: 2.2rem;
+      margin: 4% auto;
+  }
+  .subtitle { 
+      font-size: 1.6rem;
+      margin: 4% auto;
+  }
+  .description { 
+      font-size: 1.3rem;
+      margin: 4% auto;
+      width: 80%;
+  }
+  .center { 
+      width: 70%;
+      margin: 4% auto;
+  }
+  .row {
+      margin: 3% auto;
+  }
+}
+
+/* 350px - 450px */
+@media screen and (max-width: 450px) {
+  .title { 
+      font-size: 2.1rem;
+      margin: 5% auto;
+  }
+  .subtitle { 
+      font-size: 1.5rem;
+      margin: 5% auto;
+  }
+  .description { 
+      font-size: 1.2rem;
+      margin: 5% auto;
+      width: 90%;
+  }
+  .center { 
+      width: 65%;
+      margin: 5% auto;
+  }
+  .row {
+      margin: 4% auto;
+  }
+}
+
+/* Below 350px */
+@media screen and (max-width: 350px) {
+  .title { 
+      font-size: 2rem;
+      margin: 6% auto;
+  }
+  .subtitle { 
+      font-size: 1.4rem;
+      margin: 6% auto;
+  }
+  .description { 
+      font-size: 1.1rem;
+      margin: 6% auto;
+      width: 90%;
+  }
+  .center { 
+      width: 60%;
+      margin: 6% auto;
+  }
+  .row {
+      margin: 5% auto;
+  }
+}
