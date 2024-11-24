@@ -67,7 +67,7 @@ const Brides=()=>{
 
         ];  
 return <>
-<div className={styles.title} id="בנות שאיפרתי">חלק מהנשים שסמכו עלי..</div>
+<div className={styles.title} id="בנות שאיפרתי">חלק מהנשים שאיפרתי</div>
 <div className={styles.sliderContainer}>
         <Slider {...sliderSettings}>
           {content.map((item, index) => (
